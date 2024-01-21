@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Lista teste</title>
+</head>
+
+<body>
+    <button id="getAllClientsButton">Buscar todos os clientes</button>
+
+    <div id="allClientsResult"></div>
+
+    <form id="createClientForm">
+        <input type="text" id="name" placeholder="Nome" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="fone" placeholder="Telefone" required>
+        <input type="text" id="coord_x" placeholder="Coordenada X" required>
+        <input type="text" id="coord_y" placeholder="Coordenada Y" required>
+        <button type="submit">Criar cliente</button>
+    </form>
+
+    <div id="createClientResult"></div>
+
+    <button id="getOptimizedRouteButton">Otimizar Rota</button>
+
+    <div id="optimizedRouteResult"></div>
+
+    <form id="findClientForm">
+        <input type="email" id="searchEmail" placeholder="Buscar por Email">
+        <input type="text" id="searchFone" placeholder="Buscar por Telefone">
+        <input type="text" id="searchName" placeholder="Buscar por Nome">
+        <button type="submit">Buscar cliente</button>
+    </form>
+
+    <div id="findClientResult"></div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
